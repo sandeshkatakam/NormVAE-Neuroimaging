@@ -33,24 +33,20 @@ pip install -r requirements.txt
 ```
 * Preprocess data using the data preprocessing script
 ```
-python data_preprocessing.py --path "/path/to/dataset"
-```
-* Train the model using the dataset specifying the Number of Epochs and the Batch size like described below:
-
-```
-python train_model.py --epochs #epochs --bsize #batchsize
+python data_preprocessing.py --path "/path/to/dataset" --bsize #batchsize
 ```
 
 * To generate the reconstructed samples along with training the model:
   * number of samples can be given using --gensamples
 ```
-python reconstruct.py --gensamples #no.ofsamples --output_format {outputformat as string}
+python reconstruct.py --bsize #batchsize --epochs #epochs --gensamples #no.ofsamples --output_format {outputformat as string} 
 ```
 
 ### An example usage :
 #### Only For Training the Model
 ```
-python data_preprocessing.py --path "dataset.xlsx" --bdize 64
+python data_preprocessing.py --path "dataset.xlsx" --bsize 64
+
 python train_model.py --epochs 1000 --bsize 1024
 ```
 #### For Training the Model and Generating reconstructed samples
@@ -58,13 +54,13 @@ python train_model.py --epochs 1000 --bsize 1024
 ```
 python data_preprocessing.py --path "dataset.xlsx" --bsize 64
 
-python reconstruct.py --epochs 1000 --gensamples 20 --output_format "xlsx"
+python reconstruct.py --bsize 64 --epochs 1000 --gensamples 20 --output_format "xlsx"
 ```
 * To save the reconstructed samples as csv file:
 ```
 python data_preprocessing.py --path "dataset.xlsx" --bsize 64
 
-python reconstruct.py --epochs 1000 --gensamples 20 --output_format "csv"
+python reconstruct.py --bsize 64 --epochs 1000 --gensamples 20 --output_format "csv"
 ```
 
 **Note:** The above command performs training of the model and generates reconstructed samples from the decoder part of the VAE in an excel file with name `reconstruct.xlsx` or `reconstruct.csv` if you choose the output_format as `csv`. Default output format is `xlsx`.  
