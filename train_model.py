@@ -17,7 +17,7 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 parser = argparse.ArgumentParser()
 
 parser.add_argument("--bsize", default=1024, type=int) # Batch size
-parser.add_argument("--epochs", default=400, type=int) # Number of epochs
+parser.add_argument("--epochs", default=1500, type=int) # Number of epochs
 parser.add_argument("--gensamples", default=10, type=int) # Number of samples
 parser.add_argument("--output_format", default = "csv", type = str) # Ouput_format of the reconstructed samples
 
