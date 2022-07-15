@@ -1,4 +1,7 @@
 import torch.nn as nn
+import torch.nn.functional as F
+from torch.autograd import Variable
+import torch
 
 class Autoencoder(nn.Module):
     def __init__(self,D_in=7,H=50,H2=12,latent_dim=64):
