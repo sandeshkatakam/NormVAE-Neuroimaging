@@ -2,9 +2,9 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 import torch
-
+from data_preprocessing import trainloader
 class Autoencoder(nn.Module):
-    def __init__(self,D_in=7,H=50,H2=12,latent_dim=64):
+    def __init__(self,D_in=trainloader.dataset.x.shape[1],H=50,H2=12,latent_dim=64):
         
         #Encoder
         super(Autoencoder,self).__init__()

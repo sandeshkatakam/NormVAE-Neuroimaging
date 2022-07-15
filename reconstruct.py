@@ -14,7 +14,7 @@ parser.add_argument("--epochs", default=1500, type=int) # Number of epochs
 parser.add_argument("--output_format", default = "xlsx", type = str) # Ouput_format of the reconstructed samples
 args = parser.parse_args()
 
-D_in = 7
+D_in = trainloader.dataset.x.shape[1]
 H = 50
 H2 = 12
 n = args.gensamples
