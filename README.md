@@ -1,7 +1,7 @@
 # NormVAE Paper Implementation
 Paper link: [Link to the NormVAE paper](https://arxiv.org/pdf/2110.04903.pdf)
 
-Implementation of NormVAE Paper using PyTorch Framework on Custom Dataset.
+Implementation of NormVAE Paper using PyTorch Framework on Custom Dataset(ADNI Dataset).
 
 ## Usage:
 
@@ -30,14 +30,37 @@ pip install -r requirements.txt
 ```
 python train_model.py --epochs #epochs --bsize #batchsize
 ```
+
+* To generate the reconstructed samples along with training the model:
+  * number of samples can be given using --gensamples
+```
+python reconstruct.py --gensamples #no.ofsamples --output_format {outputformat as string}
+```
+
+### An example usage (with default values):
+#### Only For Training the Model
+```
+python train_model.py --epochs 1500 --bsize 1024
+```
+#### For Training the Model and Generating reconstructed samples
+* To save the reconstructed samples in excel file:  
+```
+python reconstruct.py --gensamples 20 --output_format "xlsx"
+```
+* To save the reconstructed samples as csv file:
+```
+python reconstruct.py --gensamples 20 --output_format "csv"
+```
+
+**Note:** The above command performs training of the model and generates reconstructed samples from the decoder part of the VAE in an excel file with name `reconstruct.xlsx` or `reconstruct.csv` if you choose the output_format as `csv`. Default output format is `xlsx`.  
+
 * For more help on how to use the model with different hyperparameters: 
 
 ```
 python train_model.py -h
 ```
 
-### Generating Reconstructions from the Model:
-Use the Notebook to generate the reconstructions (TO be updated soon in the repository)
+
 
 ### References: 
 
