@@ -16,9 +16,6 @@ The following packages will be installed :
 * Pandas
 * Scikit-Learn
 
-### Dataset: 
-[Dataset in Excel Format](https://github.com/sandeshkatakam/NormVAE-Neuroimaging/blob/main/ADNI_sheet_for_VED.xlsx)
-
 ### Training the Model:  
 * Download the code from the repository and get the dataset file or modify the dimensions in the code for your dataset.  
 * After downloading the repository from the terminal go to the directory and Install depedencies using : 
