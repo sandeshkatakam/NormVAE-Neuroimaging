@@ -1,3 +1,8 @@
+###########################
+# Paper Implementation: NormVAE on NeuroImaging data
+# Authors: Sandesh Katakam
+###########################
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

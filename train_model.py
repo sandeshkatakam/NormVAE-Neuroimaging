@@ -1,3 +1,8 @@
+###########################
+# Paper Implementation: NormVAE on NeuroImaging data
+# Authors: Sandesh Katakam
+###########################
+
 from data_preprocessing import load_and_standardize_data, DataBuilder, DataLoader, trainloader, testloader
 from model import customLoss, Autoencoder
 import torch

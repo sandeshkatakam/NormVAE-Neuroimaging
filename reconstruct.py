@@ -1,3 +1,8 @@
+###########################
+# Paper Implementation: NormVAE on NeuroImaging data
+# Authors: Sandesh Katakam
+###########################
+
 import torch
 import pandas as pd
 from torch import nn, optim
