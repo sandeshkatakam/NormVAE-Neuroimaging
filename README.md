@@ -2,7 +2,7 @@
 Paper link: [Link to the NormVAE paper](https://arxiv.org/pdf/2110.04903.pdf)
 
 Implementation of NormVAE Paper using PyTorch Framework on Custom Dataset(ADNI Dataset).
-![Source: ](/normvae.png= 100x200)
+
 
 <img src="https://github.com/sandeshkatakam/NormVAE-Neuroimaging/blob/main/normvae.png" alt="drawing" width="400" class = "center"/>
 Source : NormVAE: Normative Modelling on Neuroimaging Data using Variational Autoencoders paper, Fig. 1
