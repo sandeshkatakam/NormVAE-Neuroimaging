@@ -1,6 +1,6 @@
 ###########################
 # Paper Implementation: NormVAE on NeuroImaging data
-# Authors: Sandesh Katakam
+# Author of this code: Sandesh Katakam
 ###########################
 
 import torch
