@@ -1,9 +1,13 @@
 # NormVAE Paper Implementation
+
+
+Implementation of VAE Model inspired by NormVAE Paper using PyTorch Framework on Custom Dataset of Healthy Controls(ADNI Dataset).  
+
+**Model's Objective:** To reconstruct samples using the decoder part of the VAE which resemble that of Healthy Control Brain Region Volumes from the Dataset
 Paper link: [Link to the NormVAE paper](https://arxiv.org/pdf/2110.04903.pdf)
 
-Implementation of VAE Model from NormVAE Paper using PyTorch Framework on Custom Dataset(ADNI Dataset).
-
-
+**Model Architecture from the Paper:**  
+  
 <img src="https://github.com/sandeshkatakam/NormVAE-Neuroimaging/blob/main/normvae.png" alt="drawing" width="400" class = "center"/>
 Source : NormVAE: Normative Modelling on Neuroimaging Data using Variational Autoencoders paper, Fig. 1  
 
