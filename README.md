@@ -1,4 +1,4 @@
-# NormVAE Paper Implementation
+# NormVAE Model for NeuroImaging Data
 
 
 Implementation of VAE Model inspired by NormVAE Paper using PyTorch Framework on Custom Dataset of Healthy Controls(ADNI Dataset).  
